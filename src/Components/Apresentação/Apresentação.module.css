@@ -1,0 +1,30 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    height: 100vh;
+}
+
+.Container img{
+    width: 350px;
+    height: auto;
+
+    border-radius: 50px;
+}
+
+.FirstText{
+    width: 50%;
+}
+
+.Container h1{
+    font-size: 30px;
+    color: var(--Text-color);
+}
+
+.Container Span{
+    font-weight: bold;
+    color: var(--Span-color);
+}

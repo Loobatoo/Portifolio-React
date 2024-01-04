@@ -1,0 +1,67 @@
+.Card {
+    position: relative;
+    width: 426px;
+    height: 240px;
+    cursor: pointer;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    transition: .5s;
+}
+
+.CardInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Text-color);
+    font-size: 18px; 
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    padding: 2rem;
+
+    background: transparent;
+}
+
+.CardInfo h1{
+    font-size: 20px;
+    background: transparent;
+}
+
+.CardInfo h2{
+    font-size: 15px;
+    background: transparent;
+}
+
+.CardInfo a{
+    font-size: 15px;
+    color: var(--Text-color);
+    cursor: pointer;
+    transition: 0.2s;
+    background: transparent;
+}
+
+.CardInfo a:hover{
+    color: #9ec4bb;
+    transform: translateY(-2px);
+}
+
+.Card:hover .CardInfo{
+    opacity: 1; 
+    cursor: auto;
+}
+
+.Card:hover .Image{
+    opacity: 0.1;
+    transform: translateY(-10px);
+}
