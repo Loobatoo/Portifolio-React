@@ -65,3 +65,24 @@
     opacity: 0.1;
     transform: translateY(-10px);
 }
+
+@media (max-width: 1450px) {
+    .Card{ 
+        width: 240px;
+        height: 120px;
+    }
+    .CardInfo{
+        padding: 1rem;
+    }
+    .CardInfo h1{
+        font-size: 15px;
+    }
+    
+    .CardInfo h2{
+        font-size: 10px;
+    }
+    
+    .CardInfo a{
+        font-size: 10px;
+    }
+}
