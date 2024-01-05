@@ -28,3 +28,23 @@
     font-weight: bold;
     color: var(--Span-color);
 }
+
+@media (max-width: 1450px) {
+    .Container{
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 665px) {
+    .Container{
+        gap: 5rem;
+    }
+    .Container img{
+        width: 200px;
+    }
+    .Container h1{
+        font-size: 20px;
+    }
+}

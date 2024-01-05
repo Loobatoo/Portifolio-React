@@ -7,8 +7,8 @@ const CardProjetos = ({ Image, Title, Tech, Link }) => {
     <div className={classes.Card}>
       <img src={Image} alt="" className={classes.Image} />
       <div className={classes.CardInfo}>
-        <h1> {Title} </h1>
-        <h2> Tecnologias: {Tech} </h2>
+        <p> {Title} </p>
+        <p> Tecnologias: {Tech} </p>
         <a href={Link} target="_blank" rel="noopener noreferrer"> Projeto completo </a>
       </div>
     </div>

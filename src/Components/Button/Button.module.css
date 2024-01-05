@@ -1,0 +1,16 @@
+#Menu{
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+
+    font-size: 25px;
+
+    color: var(--Text-color);
+    background-color: transparent;
+
+    transition: .5s;
+}
+
+#Menu:hover{
+    transform: rotate(360deg);
+}
