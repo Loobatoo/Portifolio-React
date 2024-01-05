@@ -1,6 +1,8 @@
 import './App.css'
 
-import Menu from './Components/Menu/Menu'
+import { useState } from 'react'
+
+import OpenButton from './Components/Menu/Open/OpenButton'
 import Apresentação from './Components/Apresentação/Apresentação'
 import Projetos from './Components/Projetos/Projetos'
 
@@ -8,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <Menu />
+      <OpenButton />
       <Apresentação />
       <Projetos />
     </div>

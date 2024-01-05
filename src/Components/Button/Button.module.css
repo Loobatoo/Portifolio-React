@@ -1,4 +1,9 @@
-#Menu{
+#Open{
+    position: absolute;
+
+    left: 75px;
+    top: 75px;
+
     text-decoration: none;
     cursor: pointer;
     border: none;
@@ -11,6 +16,27 @@
     transition: .5s;
 }
 
-#Menu:hover{
+#Open:hover{
+    transform: rotate(360deg);
+}
+
+#Close{
+    position: absolute;
+    cursor: pointer;
+
+    right: 25px;
+    top: 25px;
+
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    color: var(--Background-color);
+
+    z-index: 9999;
+
+    transition: .5s;
+}
+
+#Close:hover{
     transform: rotate(360deg);
 }

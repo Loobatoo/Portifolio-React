@@ -1,0 +1,67 @@
+.Container{
+    position: fixed;
+
+    background-color: var(--Text-color);
+
+    width: 20%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.FirstLine{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    padding: 2rem;
+}
+
+.FirstLine h1{
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.FirstLine span{
+    color: var(--Span-color);
+}
+
+.FirstLine a{
+    color: var(--background-color);
+    text-decoration: none;
+
+    width: fit-content;
+
+    transition: .2s;
+}
+
+.FirstLine a:hover{
+    transform: translateX(5px);
+
+    color: var(--Span-color);
+}
+
+.SecondLine{
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.ReactIcons{
+    font-size: 30px;
+    color: var(--background-color);
+
+    transition: .2s;
+}
+
+.ReactIcons:hover{
+    color: var(--Span-color);
+    font-size: 40px;
+}
