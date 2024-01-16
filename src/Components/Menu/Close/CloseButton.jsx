@@ -12,15 +12,13 @@ const CloseButton = ({Situation,SetSituation}) => {
   const HandleCloseMenu = (e) => {
     e.preventDefault()
 
-    SetSituation(0)
+    SetSituation(false)
   }
 
   return (
     <div>
-      {Situation === 1 ? (
+      {Situation === true ? (
         <Button id={"Close"} Text={<FaX />} action={HandleCloseMenu}/>
-      ) : (Situation === 1) ? (
-        <MenuBody />
       ) : null}
     </div>
   )  

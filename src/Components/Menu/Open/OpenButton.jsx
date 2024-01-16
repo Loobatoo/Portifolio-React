@@ -9,20 +9,19 @@ import { FaBars } from "react-icons/fa";
 
 const OpenButton = () => {
 
-  const [Situation, SetSituation] = useState(0)
+  const [Situation, SetSituation] = useState(false)
 
   const HandleOpenMenu = (e) => {
     e.preventDefault()
 
-    SetSituation(1)
+    SetSituation(true)
   }
 
   return (
     <div className={classes.Container}>
-      {Situation === 0 ? (
+      <MenuBody Situation={Situation} SetSituation={SetSituation}/>
+      {Situation === false ? (
         <Button id={"Open"} Text={<FaBars/>} action={HandleOpenMenu}/>
-      ) : (Situation === 1) ? (
-        <MenuBody Situation={Situation} SetSituation={SetSituation}/>
       ) : null}
     </div>
   )  
