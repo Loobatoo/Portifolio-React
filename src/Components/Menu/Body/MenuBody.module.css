@@ -61,6 +61,8 @@
     color: var(--background-color);
 
     transition: .2s;
+
+    cursor: pointer;
 }
 
 .ReactIcons:hover{

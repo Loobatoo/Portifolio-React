@@ -1,0 +1,27 @@
+.BtnUp {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+
+    background-color: transparent;
+    color: var(--Text-color);
+
+    font-size: 20px;
+
+    width: fit-content;
+}
+
+.BtnUp:hover{
+    transform: translateY(-5px);
+
+    color: var(--Span-color);
+}
+  
+.BtnUpnone {
+    display: none;
+}
+  
