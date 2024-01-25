@@ -30,12 +30,9 @@ const ToTop = () => {
   }, []);
 
   return (
-    <button
-      className={`${classes.BtnUp} ${isVisible ? '' : classes.BtnUpnone}`}
-      onClick={scrollToTop}
-    >
-      <FaArrowUp />
-    </button>
+    <div className={`${isVisible ? classes.BtnUp : classes.BtnUpnone}`} onClick={scrollToTop}> 
+      <FaArrowUp /> 
+    </div>
   );
 };
 
